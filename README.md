@@ -1,6 +1,6 @@
 ## Bienvenue dans cette Api
 
-Qu'avons-nous utilisée ?
+Qu'avons-nous utilisé ?
 
 * SYMFONY 5 (https://symfony.com/doc/current/setup.html)
 * GUZZYHTTP (https://github.com/guzzle/guzzle.git)
@@ -13,13 +13,13 @@ Qu'avons-nous utilisée ?
 Dans un premier temps, nous avons besoins d'installer les dépendances et de lancer le serveur.
 Simplement pour vérifier que tout fonction !
 
-IMPORTANT PENSER À INSTALLER SYMFONY A L'ADRESSE :
+IMPORTANT PENSEZ À INSTALLER SYMFONY A L'ADRESSE :
 
-(Et oui la version de S5 à rendu obsolète la commande php bin/console server:run )
+(Et oui la version de S5 a rendu obsolète la commande php bin/console server:run )
 
 https://symfony.com/download
 
-Il faut également installer composer si vous ne l'avais pas sur votre machine !
+Il faut également installer composer si vous ne l'avez pas sur votre machine !
 
 https://getcomposer.org/download/
 
@@ -31,7 +31,7 @@ composer install
 symfony server:start
 ``` 
 
-Une fois installer, il suffit d'aller à cette adresse :
+Une fois installé, il suffit d'aller à cette adresse :
 ```
 http://127.0.0.1:8000/api/events?siren=numero du siren
 ``` 
@@ -42,8 +42,8 @@ Puis d'ajouter /api pour aller sur la partie API :
 http://127.0.0.1:8000/api/
 ``` 
 
-Par la suite, nous avons besoins d'importer les données de http://files.data.gouv.fr/sirene/
-Nous utilisions guzzy pour télécharger le .zip et l'installer tout en utilisant une fonction d'import de data qui convertit le.csv en donné SQL
+Par la suite, nous avons besoin d'importer les données de http://files.data.gouv.fr/sirene/
+Nous utilisions guzzy pour télécharger le .zip et l'installer tout en utilisant une fonction d'import de data qui convertit le.csv en données SQL
 
 
 * ImportData.php
@@ -55,7 +55,7 @@ php bin/console app:import-run [YYYYDDM]
 # importer les données au moins
 php bin/console app:import-monthly
 ```
-Si tous se bien passé normalement vous pouvez vérifier si les numéros de siren sont valide nous allons vérifier que dans notre base de donnée
+Si tout se  passe bien passé normalement vous pouvez vérifier si les numéros de siren sont valide nous allons vérifier que dans notre base de données
 
 ```
 http://127.0.0.1:8000/api/events?siren=numero du siren
@@ -64,7 +64,7 @@ exemple : http://127.0.0.1:8000/api/events?siren=85870764
 
 ``` 
 
-Mais que ceux passe t'il si le numéro de siren n'existe pas ? 
+Mais que se passe t'il si le numéro de siren n'existe pas ? 
  
 exemple :
 ```

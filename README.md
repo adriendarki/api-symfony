@@ -10,8 +10,8 @@ Qu'avons-nous utilisé ?
 
 ## Déploiement 
 
-Dans un premier temps, nous avons besoins d'installer les dépendances et de lancer le serveur.
-Simplement pour vérifier que tout fonction !
+Dans un premier temps, nous avons besoin d'installer les dépendances et de lancer le serveur.
+Simplement pour vérifier que tout fonctionne !
 
 IMPORTANT PENSEZ À INSTALLER SYMFONY A L'ADRESSE :
 
@@ -55,7 +55,7 @@ php bin/console app:import-run [YYYYDDM]
 # importer les données au moins
 php bin/console app:import-monthly
 ```
-Si tout se  passe bien passé normalement vous pouvez vérifier si les numéros de siren sont valide nous allons vérifier que dans notre base de données
+Si tout se passe bien normalement vous pouvez vérifier si les numéros de siren sont valide nous allons vérifier que dans notre base de données
 
 ```
 http://127.0.0.1:8000/api/events?siren=numero du siren
